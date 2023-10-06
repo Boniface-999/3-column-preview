@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.container{
+    background: #eee;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 80px;
+    height: min-content;
+}
+
+.row{
+    width: 35%;
+    height: 31rem;
+    color: #fff;
+    padding: 4rem;
+}
+
+.row h2{
+    margin-bottom: 2rem;
+}
+
+.row p{
+    font-weight: 200;
+}
+
+.one{
+    background:hsl(31, 77%, 52%);
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+.one button{
+    color: hsl(31, 77%, 52%);
+}
+
+.two{
+    background:hsl(184, 100%, 22%)
+}
+.two button{
+    color: hsl(184, 100%, 22%);
+}
+
+.three{
+    background:hsl(179, 100%, 13%);
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem; 
+}
+.three button{
+    color: hsl(179, 100%, 13%);
+}
+
+
+button{
+    padding: 1rem;
+    border-radius: 4rem;
+    width: 150px;
+    margin-top: 6rem;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+button:hover{
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+/* mobile designs */
+
+@media screen and (max-width:375px){
+    .container{
+        display: block;
+        width: 100%;
+        padding: 5rem 0;
+    }
+    .row{
+        width: 80%;
+        height: 28rem;
+        margin: auto;
+    }
+    button{
+        margin-top: 2rem;
+    }
+    .three{
+        border-bottom-left-radius: .5rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: .5rem; 
+    }
+    .one{
+        border-bottom-left-radius: .5rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: .5rem; 
+    }
+    
+}
